@@ -1,0 +1,118 @@
+.portfolio {
+    h2 {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        margin: 1rem auto;
+        width: 70%;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Dela Gothic One', cursive;
+        background: #999;
+       }
+       .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+       }
+       .container .card {
+        position: relative;
+        width: 10rem;
+        height: 15rem;
+        background: linear-gradient(#172325d1, #ffffff 30%, #f0f4ff 30%, #1d1d1d);
+        margin: .25rem;
+        border-radius: 1rem;
+        overflow: hidden;
+       }
+       .container .card .imgBx {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           border-radius: 1rem;
+           overflow: hidden;
+           transition: .5s;
+           transform-origin: top;
+           z-index: 10000;
+       
+       }
+       .container .card:hover .imgBx,
+       .container .card:focus .imgBx
+        {
+           transform: translateY(30px) scale(.5);
+       }
+       .container .card .imgBx img {
+           position: absolute;
+           top: 0;
+           left: -15px;
+           width: 131%;
+           height: 100%;
+           object-fit: cover;
+       
+       }
+       .container .card .content {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: flex-end;
+           padding-bottom: .2rem;
+           transition: .5s;
+           transform: translateY(100%); 
+       }
+       .container .card:hover .content,
+       .container .card:focus .content {
+           transform: translateY(0);
+       }
+       .container .card .content .details {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           text-align: center;
+       }
+       .container .card .content .details h2 {
+           color: #fff;
+           font-size: small;
+           font-weight: 500;
+       }
+       .container .card .content .details h2 span {
+           color: rgb(145, 226, 236);
+           font-size: smaller;
+           font-weight: 400;
+       }
+       .btn {
+           position: relative;
+           display: flex;
+           padding-top: 0;
+       }
+       
+       .btn a {
+           width: 7rem;
+           height: 2rem;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background: #9c9c9c;
+           border-radius: 5px;
+           color: rgb(204, 204, 204);
+           text-decoration: none;
+           transition: .5s;
+       
+       }
+       .btn a:hover,
+       .btn a:focus {
+           transform: scale(1.1);
+           background: rgb(46, 46, 46);
+       
+       }
+       
+}

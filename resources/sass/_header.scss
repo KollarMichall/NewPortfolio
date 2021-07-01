@@ -1,0 +1,18 @@
+.header {
+    margin-bottom: .5rem;
+
+    .navbar-brand img {
+        position: absolute;
+        top: -.3rem;
+        left: -2rem;
+    }
+    
+    
+    @media (min-width: 992px){
+    .navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    margin-left: 2rem;
+}
+    }
+}
